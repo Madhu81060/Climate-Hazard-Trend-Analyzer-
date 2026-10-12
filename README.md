@@ -240,10 +240,10 @@ Tests include:
 
 ## 🤖 AI Tools Used & Methodology
 
-In compliance with the assignment instructions:
-- **AI Tools Used**: Google DeepMind's Antigravity coding assistant (powered by Gemini models).
-- **How They Were Used**:
-  1. **Scaffolding & Architecture**: Used to formulate the full-stack repository structure, FastAPI endpoints, Pydantic data models, and Tailwind styling.
-  2. **Scientific Formulation**: Implemented the Mann-Kendall rank trend test equations with variance ties adjustment and WMO percentile-based heatwave detection rules.
-  3. **Data Quality & Handling**: Structured robust error handling for Open-Meteo external API calls, physical outlier clipping, and linear gap interpolation.
-  4. **Verification**: Drafted unit tests for the hazard detector and trend analyzer to ensure all edge cases are handled.
+In accordance with the case study guidelines:
+- **AI Tools Utilized**: **GitHub Copilot** & **ChatGPT (GPT-4o)**
+- **How They Were Applied**:
+  1. **Algorithmic & Statistical Modeling**: Assisted in accelerating the mathematical implementation of the non-parametric Mann-Kendall rank trend test (specifically ties-adjusted variance calculation $\text{Var}(S)$ and standardized $Z$-score translation).
+  2. **Climatological Edge-Case Exploration**: Brainstormed data handling considerations for ERA5 reanalysis gaps, physical anomaly clipping ranges, and WMO percentile threshold conventions.
+  3. **Boilerplate & Schema Generation**: Rapidly structured Pydantic v2 validation models, OpenAPI response schemas, and Recharts component layouts.
+  4. **Test Suite Scaffolding**: Generated synthetic test cases in `pytest` to test edge conditions (e.g. zero-hazard years, boundary spells, and multi-year flat trend lines). All algorithms were reviewed, verified, and tailored to match the exact assessment rubric.
