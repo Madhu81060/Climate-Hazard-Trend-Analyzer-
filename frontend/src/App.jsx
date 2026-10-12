@@ -119,7 +119,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50/50 via-white to-slate-50 text-slate-800 flex flex-col font-sans">
       <Header
         onOpenMethodology={() => setIsMethodologyOpen(true)}
         onExportCSV={() => handleExport('csv')}
@@ -132,15 +132,15 @@ export default function App() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
         {/* Error notification banner */}
         {errorMessage && (
-          <div className="bg-red-950/80 border border-red-500/50 rounded-2xl p-4 flex items-start space-x-3 text-red-200 text-sm animate-shake">
-            <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+          <div className="bg-red-50 border border-red-200 rounded-2xl p-4 flex items-start space-x-3 text-red-800 text-sm animate-shake">
+            <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
               <strong className="font-semibold">Analysis Error: </strong>
               <span>{errorMessage}</span>
             </div>
             <button
               onClick={() => setErrorMessage(null)}
-              className="text-red-400 hover:text-white text-xs underline"
+              className="text-red-700 hover:text-red-900 text-xs underline"
             >
               Dismiss
             </button>
@@ -178,7 +178,7 @@ export default function App() {
 
         {/* Visualizations and Insights Section */}
         {analysisData && (
-          <div className="space-y-6 animate-fadeIn">
+          <div className="space-y-6">
             {/* Headline Insights & Statistical KPI Cards */}
             <SummaryMetrics data={analysisData} />
 
@@ -201,7 +201,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950 py-6 px-4 text-center text-xs text-slate-500">
+      <footer className="border-t border-emerald-100 bg-white py-6 px-4 text-center text-xs text-slate-500">
         <p>
           Climate Hazard Trend Analyzer • ECMWF ERA5 & Open-Meteo API • Full-Stack Case Study Assessment
         </p>

@@ -8,12 +8,12 @@ export default {
     extend: {
       colors: {
         climate: {
-          heat: '#ef4444',
-          warn: '#f97316',
-          cool: '#0ea5e9',
-          dry: '#d97706',
-          dark: '#0f172a',
-          card: '#1e293b'
+          primary: '#059669', // Emerald 600
+          primaryDark: '#047857', // Emerald 700
+          lightBg: '#f0fdf4', // Emerald 50
+          cardBg: '#ffffff',
+          accent: '#10b981', // Emerald 500
+          border: '#d1fae5', // Emerald 100
         }
       }
     },

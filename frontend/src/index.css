@@ -9,29 +9,31 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #0b0f19;
+  background-color: #f7fee7; /* very soft light tint */
+  background: linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 40%, #ffffff 100%);
+  color: #1e293b;
 }
 
-/* Custom scrollbars */
+/* Custom scrollbars with emerald green */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #a7f3d0;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #6ee7b7;
 }
 
-/* Leaflet dark styling */
+/* Leaflet styling */
 .leaflet-container {
   width: 100%;
   height: 100%;
