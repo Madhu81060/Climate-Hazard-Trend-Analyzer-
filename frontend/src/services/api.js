@@ -28,7 +28,7 @@ export async function analyzeClimateData(payload) {
   // 1. Try FastAPI backend first
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000); // 2s quick check for backend
+    const timeoutId = setTimeout(() => controller.abort(), 45000); // 45s timeout for full historical analysis
 
     const res = await fetch(`${BASE_URL}/api/analyze`, {
       method: 'POST',
