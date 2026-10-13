@@ -50,6 +50,7 @@ export async function runClientSideAnalysis(params) {
     weatherJson = generateClimatologicalSeries(latitude, longitude, start_year, end_year);
   }
 
+  const daily = weatherJson.daily;
   const times = daily.time;
   const tmaxRaw = daily.temperature_2m_max;
   const precipRaw = daily.precipitation_sum;
